@@ -14,3 +14,13 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+- 🔭 I’m currently working on Java, Springboot, AWS, Finance Domain
+- 🌱 I’m currently learning AWS, Terraform, Containerization (ECS, EKS)
+- 💬 Ask me about Code in Java & Springboot, Systems Design, Microservices, Cloud Journey
+- 📫 Follow me on :
+  - [LinkedIn](https://www.linkedin.com/in/hkdev/)
+  - [Medium](https://hkcodeblogs.medium.com/)
+  - [Twitter](https://twitter.com/hey_mant)
+  - [Stackoverflow](https://stackoverflow.com/users/7505731/hemant)
+    
