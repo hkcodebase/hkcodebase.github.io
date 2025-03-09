@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: Calibri}
+
+        .tablink {
+            background-color: #bfc5bc;
+            color: #130603;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 33%;
+            border-color: #1a1a1a;
+        }
+
+        .tablink:hover {
+            background-color: #9cfa89;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            color: #050505;
+            display: none;
+            padding: 50px;
+            font-size: 30px;
+        }
+
+        .social-logo {
+            height: 60px;
+            width: 50px;
+            margin-bottom: 6px;
+            transition: height 0.8s ease;
+        }
+        td{
+         padding: 10px;
+        }
+
+        #Home {background-color:white;}
+        #Projects {background-color:white;}
+        #Blogs {background-color:white;}
+        #Contact {background-color:white;}
+    </style>
+</head>
+<body>
+<button class="tablink" onclick="openCity('Home', this, '#28CA07FF')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openCity('Projects', this, '#28CA07FF')">Projects</button>
+<button class="tablink" onclick="openCity('Blogs', this, '#28CA07FF')">Blogs</button>
+<!--<button class="tablink" onclick="openCity('Contact', this, '#28CA07FF')">Contact</button>-->
+
+<div id="Home" class="tabcontent">
+    <div class="section section-text">
+        <h1 align="center">Hemant Kumar </h1>
+    </div>
+    <h4>About Me</h4>
+    <div class="section section-text">
+        <ul>
+            <li>
+                AWS Certified Solution Architect with over 14 years of experience.
+            </li>
+            <li>
+                Working at JPMorgan Chase & Co. in NYC, USA.
+            </li>
+            <li>
+                This is my website to share my passion projects, insightful blogs, and ways to connect with like-minded enthusiasts here.
+            </li>
+        </ul>
+        <br/>
+        <a href="https://resume.hemantkumar.dev" target={"_blank"}> View My Resume </a>
+        <h4> Social </h4>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://github.com/hkcodebase" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="social-logo" alt="Github"/>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/hemantk01/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="social-logo" alt="LinkedIn"/>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://twitter.com/hey_mant" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="social-logo" alt="Twitter"/>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+    </div>
+</div>
+
+<div id="Blogs" class="tabcontent">
+    <h4>Recent code blogs at Medium <a href="https://hkcodeblogs.medium.com" target={"_blank"}>hkcodeblogs.medium.com</a>
+    </h4>
+    <ul>
+        <li>
+            <a href="https://hkcodeblogs.medium.com/cloud-resume-using-aws-services-part-1-69e000894f73"
+               target={"_blank"}>
+                Host Static website over AWS usign Route53, CloudFront and S3</a>
+            <br/>
+            <br/>
+        </li>
+        <li>
+            <a href="https://hkcodeblogs.medium.com/rest-apis-using-springboot-3-userbook-application-43df796f69fd"
+               target={"_blank"}>
+                Develop REST Based Microservice using Springboot
+            </a>
+            <br/>
+            <br/>
+        </li>
+        <li>
+            <a href="https://hkcodeblogs.medium.com/create-docker-image-and-run-spring-boot-3-based-microservice-f57258f148b"
+               target={"_blank"}>
+                Dockerize Spring boot Application</a>
+            <br/>
+            <br/>
+        </li>
+        <li>
+            <a href="https://hkcodeblogs.medium.com/deploy-springboot-3-based-microservice-on-aws-ec2-4b9efdebb798"
+               target={"_blank"}>
+                Deploy Springboot and maven based microservice to AWS EC2 Instance
+            </a>
+            <br/>
+            <br/>
+        </li>
+        <li>
+            <a href="https://medium.com/@hkcodeblogs/deploy-a-spring-boot-application-to-aws-ecs-91742a32a5f1"
+               target={"_blank"}>
+                Deploy Spring boot application to AWS ECS</a>
+            <br/>
+            <br/>
+        </li>
+        <li>
+            <a href="https://hkcodeblogs.medium.com/upgrade-springboot-applications-to-latest-version-in-10-minutes-9bd141d02498"
+               target={"_blank"}>
+                Migrate old version applications to JDK 21 and Springboot 3.3</a>
+            <br/>
+            <br/>
+        </li>
+    </ul>
+</div>
+
+<div id="Projects" class="tabcontent">
+    <h1>Projects</h1>
+    <ul>
+        <li>
+            <a href="https://hemantkumar.dev" target={"_blank"}> My Portfolio Website
+                (hemantkumar.dev) </a> <br/>
+            This project my resume app built using HTML and CSS, providing a responsive and visually appealing user
+            interface.
+            It's deployed on AWS, utilizing Route 53 for DNS management, S3 for static website hosting, and
+            AWS CloudFront for CDN,  AWS ACM for SSL Certificate Management, CI/CD via GitHub Actions.
+            <br/>
+            <br/>
+        </li>
+        <li>
+            <a href="https://analyze.netflixdata.com" target={"_blank"}>Netflixdata Analyzer
+                (analyze.netflixdata.com) </a> <br/>
+            This data analytics application, developed using Java, Spring Boot, Thymeleaf, Docker, and Docker
+            Compose,
+            provides insights on your watched content on Netflix. Users can upload their ViewingActivity.csv file
+            from the Netflix-provided
+            watched history in zip format for analysis. The project is available on GitHub.
+            <br/>
+            <br/>
+        </li>
+        <li>
+            <a href="https://github.com/spring-lab-01" target={"_blank"}>Spring Lab 01 </a> <br/>
+            Repository of Spring boot based projects on github.
+        </li>
+    </ul>
+</div>
+
+<div id="Contact" class="tabcontent">
+    <h1>Contact</h1>
+    <p>Oslo is the capital of Norway.</p>
+</div>
+
+
+<script>
+    function openCity(cityName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(cityName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
